@@ -1,0 +1,169 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+.home-wrapper {
+  min-height: 100vh;
+  background-color: #f5f7fa;
+  color: #222;             
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.home-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.search-bar {
+  flex: 1;
+  max-width: 400px;
+  margin: 0 1rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #222;
+  background-color: #fff;
+}
+
+.search-bar::placeholder {
+  color: #888;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cart-info, .user-info {
+  font-weight: 500;
+  color: #2d5be3;
+}
+
+
+.home-container {
+  padding: 2rem;
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.section-title {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  color: #222;
+  font-weight: bold;
+}
+
+
+.book-slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
+}
+
+
+.book-card {
+  min-width: 160px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
+
+
+.book-cover {
+  width: 100%;
+  height: 200px;
+  background-color: #ddd;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+}
+
+
+.book-title {
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  color: #222;
+}
+
+
+.book-card button {
+  padding: 0.5rem 1rem;
+  background-color: #4e8cff;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.book-card button:hover {
+  background-color: #376edc;
+}
+
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+
+.nav-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: background-color 0.3s;
+}
+
+.nav-btn:hover {
+  background-color: #0056b3;
+}
+
+.nav-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}

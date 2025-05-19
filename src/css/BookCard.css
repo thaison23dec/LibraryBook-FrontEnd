@@ -1,0 +1,91 @@
+.book-section {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  .section-title {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .section-link {
+    text-decoration: none;
+    color: #2d5be3;
+    cursor: pointer;
+  }
+  
+  .book-slider-wrapper {
+    overflow-x: auto;
+    width: 100%;
+  }
+  
+  .book-slider-wrapper::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .book-slider-wrapper::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+  }
+  
+  .book-slider-wrapper::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .book-slider {
+    display: flex;
+    gap: 1rem;
+    scroll-snap-type: x mandatory;
+    width: fit-content;
+    min-width: 1000px; 
+  }
+  
+  .book-card {
+    flex: 0 0 180px;
+    scroll-snap-align: start;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    text-align: center;
+  }
+  
+  .book-cover {
+    width: 100%;
+    height: 160px;
+    background-color: #eee;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .book-title {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+    color: #222;
+  }
+  
+  .book-author {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+  
+  .book-card button {
+    padding: 0.4rem 0.8rem;
+    background-color: #4e8cff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .book-card button:hover {
+    background-color: #376edc;
+  }
+  
