@@ -1,0 +1,132 @@
+.cart-container {
+    width: 60%;
+    background: #fff;
+    padding: 20px;
+    margin-top: 80px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.cart-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.book-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.book-card {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f4ebdc;
+    position: relative;
+    border: 1px solid #333;
+    border-radius: 20px;
+    gap: 30px;
+}
+
+.book-card img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.book-card img:hover {
+    transform: scale(1.1);
+    transition: 0.45s;
+}
+
+.book-info {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.book-info p {
+    margin: 5px 0;
+}
+
+.quantity {
+    width: 50px;
+    padding: 3px;
+    text-align: center;
+}
+
+
+.borrow-btn {
+    display: block;
+    width: 150px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.borrow-btn:hover {
+    background: #45a049;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.close-btn:hover {
+    background-color: #c00;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.update-btn {
+    background-color: #007bff; /* Màu xanh lá */
+    color: white; /* Chữ màu trắng */
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.update-btn:hover {
+    background-color: #0056b3; /* Màu xanh đậm khi hover */
+    transform: scale(1.05);
+}
+
+.update-btn:active {
+    background-color: #1e7e34;
+    transform: scale(0.95);
+}
+
+.quantity {
+    margin-right: 20px;
+}

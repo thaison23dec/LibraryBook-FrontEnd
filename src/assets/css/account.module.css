@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container chính */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+/* Thẻ thông tin */
+.profile-card {
+    background-color: #F5E8D8;
+    padding: 20px;
+    border-radius: 15px;
+    width: 50%;
+    height: auto;
+    text-align: left;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center; /* Căn giữa ảnh và thông tin */
+    gap: 50px;
+}
+
+/* Bọc nội dung văn bản và nút */
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Đưa nút xuống dưới */
+    height: 100%;
+}
+
+/* Ảnh đại diện */
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 15px 15px;
+}
+
+/* Thông tin cá nhân */
+.info p {
+    margin: 8px 0;
+}
+.button-group {
+    display: flex;       /* Hiển thị các nút trên cùng một hàng */
+    gap: 10px;           /* Khoảng cách giữa các nút */
+    margin-top: 20px;    /* Khoảng cách từ trên xuống */
+}
+
+/* Nút đổi mật khẩu */
+.btn {
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin-top: 20px;
+    width: auto;
+    font-size: 16px;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.book {
+    width: 150px;
+    height: 200px;
+    display: block;
+    margin: 15px 15px;
+}
+
+.back-btn {
+    margin-left: 10%;
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+    margin-top: 20px;
+    display: grid;
+}
+.back-btn:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.bookImage {
+    object-fit: cover;
+    width: 300px;
+    height: auto;
+}

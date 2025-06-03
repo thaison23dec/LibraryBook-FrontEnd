@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding-left: 50px;
+}
+
+.content-box {
+    margin-top: 80px;
+    background-color: #F4EBDC;
+    padding: 20px;
+    border-radius: 20px;
+    width: 40%;
+    height: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    border: 2px solid black;
+}
+
+.content-box h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* logo */
+.logo {
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%);
+    width: 300px; /* Điều chỉnh kích thước logo */
+    height: 300px;
+    border-radius: 50%; /* Tạo hình tròn */
+    object-fit: cover; /* Đảm bảo hình không bị méo */
+}
+
+/* slogan */
+.feature {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Khoảng cách giữa các mục */
+    max-width: 100%;
+    margin: 50px;
+    padding: 20px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px; /* Khoảng cách giữa ảnh và nội dung */
+}
+
+.feature-item img {
+    width: 500px; /* Điều chỉnh kích thước ảnh */
+    height: auto;
+    border-radius: 10px; /* Bo góc ảnh */
+}
+
+.feature-text {
+    text-align: left;
+    max-width: 60%;
+}
+
+.feature-text h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.feature-text p {
+    font-size: 16px;
+    color: #555;
+}

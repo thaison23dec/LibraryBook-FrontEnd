@@ -1,0 +1,38 @@
+
+.container {
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+    text-align: center;
+}
+
+/* Bảng hóa đơn */
+.bill-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.bill-table th, .bill-table td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.bill-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.bill-row:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.box {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+}

@@ -1,0 +1,91 @@
+/* history */
+.status-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.status {
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.status.active {
+    font-weight: bold;
+}
+
+.status:hover {
+    text-decoration: none;
+    transform: scale(1.05); /* Phóng to nhẹ */
+    transition: 0.3s;
+}
+a {
+    color: black; /* Đổi màu chữ thành đen */
+    text-decoration: none; /* Bỏ gạch chân */
+}
+
+.pagination-control {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.pagination-control label {
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+#pageSize {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Bo góc */
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+#pageSize:hover {
+    border-color: #007bff;
+    background-color: #f1f1f1;
+}
+
+#pageSize:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#pageSize option {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.pagination {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.pagination button {
+    padding: 5px 10px;
+    margin: 0 2px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+}
+
+.pagination button.active {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.pagination button:disabled {
+    background-color: #f0f0f0;
+    color: #ccc;
+    cursor: not-allowed;
+}

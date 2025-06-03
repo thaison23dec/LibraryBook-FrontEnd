@@ -1,0 +1,79 @@
+/* Login.module.css */
+.loginPage {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('/picture/anh_thu_vien.jpg');
+    margin: 0;
+}
+
+.loginPage .loginContainer {
+    background: white;
+    width: 25%;
+    height: 60%;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.loginPage h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.loginPage form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+.loginPage label {
+    text-align: left;
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.loginPage input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.loginPage button {
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.loginPage button:hover {
+    background-color: #388E3C;
+}
+
+.loginPage p {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.loginPage a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.loginPage a:hover {
+    text-decoration: underline;
+}

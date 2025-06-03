@@ -1,0 +1,34 @@
+/* Chỉ áp dụng khi class "home-footer" tồn tại (chỉ trong Home.jsx) */
+.home-footer {
+  background: url('/picture/tmp.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 20px;
+  text-align: left;
+  position: relative;
+}
+
+.home-footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.home-footer .text-box {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 400px;
+}
+
+.home-footer .text-box p {
+  margin: 5px 0;
+}
+
+.home-footer .text-box a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+.home-footer .text-box a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,93 @@
+/* Bọc toàn bộ vùng tìm kiếm */
+.searchContainer {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 20px 0;
+    background: #f9f9f9;
+}
+
+/* Vùng chứa các ô input */
+.searchBox {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+/* Các input trong vùng tìm kiếm */
+.searchBox input {
+    padding: 5px;
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Nút tìm kiếm bên trong search container */
+.searchContainer .btn {
+    margin-bottom: auto;
+}
+
+/* Container của bộ chọn phân trang */
+.paginationControl {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Bộ chọn trang */
+#pageSize {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+#pageSize:hover {
+    border-color: #007bff;
+    background-color: #f1f1f1;
+}
+
+#pageSize:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#pageSize option {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.category-row {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.checkbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.checkbox-container .checkbox-group {
+    height: auto;
+    gap: 10px;
+}
+.checkbox-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Chia thành 3 cột */
+    gap: 10px 20px; /* khoảng cách giữa các hàng và cột */
+    margin-top: 10px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

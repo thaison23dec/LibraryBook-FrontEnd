@@ -1,0 +1,79 @@
+.navbar {
+    position: fixed;
+    background-color: green;
+    top: 0;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;  /* Khoảng cách giữa các mục */
+}
+
+.navbar ul li {
+    position: relative;  /* Cần thiết để dropdown hiển thị đúng */
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 12px;
+}
+
+.navbar ul li a:hover {
+    background-color: #8ed19b;
+    border-radius: 5px;
+}
+
+/* Đẩy tài khoản sang phải */
+.navbar ul .right {
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+/* Dropdown menu */
+.navbar ul .dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: green;
+    min-width: 180px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 0;
+    text-align: left;
+}
+
+/* Hiển thị dropdown khi hover */
+.navbar ul .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Kiểu dropdown menu */
+.navbar ul .dropdown .dropdown-menu li {
+    display: block;
+    padding: 10px 15px;
+    white-space: nowrap;
+}
+
+.dropdown-menu li a {
+    display: block;
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #8ed19b;
+    border-radius: 5px;
+}

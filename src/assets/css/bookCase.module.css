@@ -1,0 +1,185 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: left;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+    text-align: center;
+}
+.box {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+}
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+.book {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.book:hover {
+    background-color: lightgray;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.book img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.search-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 30px auto;
+    background: #fdfdfd;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.search-box {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-row {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.input-row input {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.category-row label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.checkbox-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 thể loại trên 1 dòng */
+    gap: 10px; /* khoảng cách giữa các ô */
+}
+
+.checkbox-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 150px;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #007B33;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-end;
+}
+
+.btn:hover {
+    background-color: #005c24;
+}
+
+.pagination-control {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.pagination-control label {
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+#pageSize {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Bo góc */
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+#pageSize:hover {
+    border-color: #007bff;
+    background-color: #f1f1f1;
+}
+
+#pageSize:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#pageSize option {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.pagination {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.pagination button {
+    padding: 5px 10px;
+    margin: 0 2px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+}
+
+.pagination button.active {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.pagination button:disabled {
+    background-color: #f0f0f0;
+    color: #ccc;
+    cursor: not-allowed;
+}
